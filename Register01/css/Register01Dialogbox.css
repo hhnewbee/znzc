@@ -1,0 +1,50 @@
+.divDialogboxBack{
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.divDialogboxMain{
+    font-family: Tahoma, Geneva, sans-serif;
+    border-radius: 6px;
+    min-width: 147px;
+    width: 50%;
+    height: 80px;
+    max-width: 320px;
+    position: relative;
+    background-color: white;
+    border: solid 1px rgb(90,90,90);
+    display: none;
+}
+.divDialogboxTitle{
+    font-family: Arial, Gadget, sans-serif;
+    font-weight: bold;
+    color: rgb(90,90,90);
+    padding-bottom: 3px;
+    margin: 10px 5%;
+    border-bottom: solid 1px rgb(230,230,230);
+    user-select: none;
+    font-size: 0.8rem;
+}
+.divDialogboxButtonBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.5rem;
+}
+.divDialogboxBtn {
+    text-align: center;
+    border-radius: 3px;
+    border: solid 1px rgb(230,230,230);
+    color: rgb(60,60,60);
+    width: 25%;
+    min-width: 43px;
+    height: 30px;
+    padding: 3px;
+    user-select: none;
+}

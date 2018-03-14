@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+}
+#divMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#divShowData{
+    height: 100%;
+    width: 50%;
+}
+.button{
+    display: inline-block;
+    height: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #00aaee;
+    cursor:default;
+    user-select: none;
+}
+.selectCommand{
+    display: none;
+}
+.dataShow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #0CCF91;
+    cursor:default;
+    user-select: none;
+    text-align: center;
+    margin: 10px;
+    margin-left: 8%;
+}
+#divCommandData{
+    height: 100%;
+    width: 50%;
+    margin: 10px;
+}
+.dataIten{
+    height: 25px;
+    margin-left: 20px;
+    text-align: center;
+}
+#log{
+    width: 95%;
+    height: 200px;
+    border-radius: 6px;
+    overflow: scroll;
+    border:5px solid seagreen;
+    margin: 6px;
+}
+#clear{
+    width: 90%;
+    margin-left: 3.5%;
+    text-align: center;
+}
+#command{
+    margin-top: 10px;
+}
+#datatable{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #5A5A5C;
+    font-size: 12px;
+    border-radius: 6px;
+}
+#divItemAll{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tableitem{
+    width: 12.3%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #5A5A5C;
+    border-left: 1px solid #5A5A5C;
+}
+#divDataSend{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.divDataSendItem{
+    width: 260px;
+    margin: 5px;
+}
+.spanDataId{
+    display: inline-block;
+    width: 120px;
+}
+#inputTimeText{
+    width: 200px;
+}
+.inputer{
+    width: 60px;
+    display: inline;
+}

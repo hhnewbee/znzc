@@ -1,0 +1,25 @@
+@mixin WhCenter {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+body{
+  height: 100vh;
+  @include WhCenter;
+  div{
+    @include WhCenter;
+    height: 200px;
+    width: 200px;
+    background-color: #00aaee;
+    span{
+      padding:{
+        left: 5px;
+        bottom: 5px;
+        right: 5px;
+      }
+      border-bottom: 1px solid rgba(222, 203, 200, 0.72);
+      user-select: none;
+      cursor:default;
+    }
+  }
+}

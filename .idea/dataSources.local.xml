@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - intelligentSocket@localhost" uuid="ba2ff414-af28-4470-a561-74284a702ade">
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="MySQL - phpdata@localhost" uuid="002e1c94-17c0-4e32-946a-9dae324bff46">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>phpdata.*</schema-pattern>
+      <default-schemas>phpdata.*</default-schemas>
+    </data-source>
+  </component>
+</project>

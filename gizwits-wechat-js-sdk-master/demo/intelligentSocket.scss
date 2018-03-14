@@ -1,0 +1,51 @@
+@mixin center{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+*{
+  margin: 0;
+  padding:0;
+}
+html{
+  font-size: 16px;
+}
+#divMain{
+  width: 100vw;
+  height: 100vh;
+  .Device00{
+    display: inline-block;
+    height: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #00aaee;
+    cursor:default;
+    user-select: none;
+  }
+  .selectCommand{
+    display: none;
+  }
+  .dataShow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid #5A5A5C;
+    cursor:default;
+    user-select: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .dataIten{
+    height: 25px;
+    margin-left: 20px;
+    text-align: center;
+  }
+  #td2{
+    margin: 20px;
+    width: 100%;
+  }
+}
+

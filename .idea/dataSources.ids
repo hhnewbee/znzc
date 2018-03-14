@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - intelligentSocket@localhost" uuid="ba2ff414-af28-4470-a561-74284a702ade">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="MySQL - phpdata@localhost" uuid="002e1c94-17c0-4e32-946a-9dae324bff46">
+    <database-info product="MySQL" version="5.5.28" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="phpdata"/>
+      <table id="2" parent="1" name="backlistener"/>
+      <table id="3" parent="1" name="char_request"/>
+      <table id="4" parent="1" name="friend"/>
+      <table id="5" parent="1" name="ifonline"/>
+      <table id="6" parent="1" name="message"/>
+      <table id="7" parent="1" name="think_data"/>
+      <table id="8" parent="1" name="timenum"/>
+      <table id="9" parent="1" name="user"/>
+      <table id="10" parent="1" name="intelligentsocket"/>
+      <table id="11" parent="1" name="intelligentsocketuser"/>
+      <column id="12" parent="2" name="state">
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="13" parent="2" name="page">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="14" parent="3" name="geter">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="15" parent="3" name="sender">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="16" parent="3" name="request">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="17" parent="3" name="requestcount">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="18" parent="3" name="response">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="19" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="20" parent="4" name="nickname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="21" parent="4" name="f_nickname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="22" parent="4" name="zt">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="23" parent="4" name="fzt">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="24" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="5" name="sender">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="26" parent="5" name="ifout">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="27" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="28" parent="5" name="timemessage">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="29" parent="5" name="geter">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="30" parent="5" name="time_id_uindex">
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="31" parent="5" name="time_id_uindex">
+        <columns>id</columns>
+        <underlying-index>time_id_uindex</underlying-index>
+      </key>
+      <column id="32" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="33" parent="6" name="sender">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="34" parent="6" name="geter">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="35" parent="6" name="content">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="36" parent="6" name="stime">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="37" parent="6" name="mloop">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="38" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="39" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(8) unsigned</data-type>
+      </column>
+      <column id="40" parent="7" name="data">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="41" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="42" parent="8" name="client1">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="43" parent="8" name="client2">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="44" parent="8" name="time">
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="45" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(8) unsigned</data-type>
+      </column>
+      <column id="46" parent="9" name="nickname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="47" parent="9" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="48" parent="9" name="num">
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <index id="49" parent="9" name="nickname">
+        <columns>nickname</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="50" parent="9" name="nickname">
+        <columns>nickname</columns>
+        <underlying-index>nickname</underlying-index>
+      </key>
+      <key id="51" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="52" parent="10" name="温度">
+        <data-type>text</data-type>
+      </column>
+      <column id="53" parent="10" name="湿度">
+        <data-type>text</data-type>
+      </column>
+      <column id="54" parent="10" name="电流">
+        <data-type>text</data-type>
+      </column>
+      <column id="55" parent="10" name="电压">
+        <data-type>text</data-type>
+      </column>
+      <column id="56" parent="10" name="电功率">
+        <data-type>text</data-type>
+      </column>
+      <column id="57" parent="10" name="功耗">
+        <data-type>text</data-type>
+      </column>
+      <column id="58" parent="10" name="time">
+        <data-type>text</data-type>
+      </column>
+      <column id="59" parent="10" name="name">
+        <data-type>text</data-type>
+      </column>
+      <column id="60" parent="11" name="phoneNumber">
+        <data-type>text</data-type>
+      </column>
+      <column id="61" parent="11" name="password">
+        <data-type>text</data-type>
+      </column>
+      <column id="62" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="63" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

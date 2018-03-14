@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #00aaee; }
+    body div span {
+      padding-left: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      border-bottom: 1px solid rgba(222, 203, 200, 0.72);
+      user-select: none;
+      cursor: default; }
+
+/*# sourceMappingURL=WheelRegister01.css.map */

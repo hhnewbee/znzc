@@ -1,0 +1,12 @@
+{
+  "Rgeister01.html": {
+    "resources": [
+      "css/Register01.css",
+      "js/Register01Dialogbox.js",
+      "js/Jquery/jquery-3.1.1.min.js",
+      "js/prefixfree/prefixfree.min.js",
+      "js/Register01.js",
+      "css/Register01Dialogbox.css"
+    ]
+  }
+}

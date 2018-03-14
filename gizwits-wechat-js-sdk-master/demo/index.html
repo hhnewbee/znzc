@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>js-sdk-test</title>
+  <link href="IntelligentSocket.css" rel="stylesheet"/>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="jquery.cookie.min.js"></script>
+  <script src="../src/gizwits_ws_0.3.0.min.js"></script>
+  <script src="IntelligentSocket.js"></script>
+</head>
+
+<body>
+  <div id="divMain">
+    <div id="divCommandData">
+        <div id="initDevice" class="button">启动设备</div>
+        <div id="readData" class="button">读取数据</div>
+        <select id="did" class="selectCommand"></select>
+        <select id="readDid" class="selectCommand"></select>
+        <select id="writeDid" class="selectCommand"></select>
+        <textarea rows="10" cols="90" id="command" placeholder="非用户数据修改"></textarea>
+        <div id="write" class="button">修改设备数据</div>
+        <div id="divDataSend">
+            <div class="divDataSendItem">
+                <span class="spanDataId">关机每天重复</span>
+                <select name="Off_Day_Repeat" class="selector" style="width: 120px;">
+                    <option value=false>0</option>
+                    <option value=true>1</option>
+                </select>
+            </div>
+            <div class="divDataSendItem">
+                <span class="spanDataId">开机每天重复</span>
+                <select name="On_Day_Repeat" class="selector" style="width: 120px;">
+                    <option value=false>0</option>
+                    <option value=true>1</option>
+                </select>
+            </div>
+            <div class="divDataSendItem">
+                <span class="spanDataId">定时开机</span>
+                <select name="Time_On" class="selector" style="width: 120px;">
+                    <option value=false>0</option>
+                    <option value=true>1</option>
+                </select>
+            </div>
+            <div class="divDataSendItem">
+                <span class="spanDataId">定时关机</span>
+                <select name="Time_Off" class="selector" style="width: 120px;">
+                    <option value=false>0</option>
+                    <option value=true>1</option>
+                </select>
+            </div>
+            <div class="divDataSendItem">
+                <span class="spanDataId">设备开启</span>
+                <select name="LED_OnOff" class="selector" style="width: 120px;">
+                    <option value=false>0</option>
+                    <option value=true>1</option>
+                </select>
+            </div>
+            <!--<div id="inputTimeText">-->
+                <!--<div class="divDataSendItemI inputTime">-->
+                    <!--<span class="spanDataId">定时开机时间</span>-->
+                    <!--<input name="Time_On_Minute" class="inputer" type="text">-->
+                    <!--<div class="divSetTime">确定</div>-->
+                <!--</div>-->
+                <!--<div class="divDataSendItem inputTime">-->
+                    <!--<span class="spanDataId">定时关机时间</span>-->
+                    <!--<input name="Time_Off_Minute" class="inputer" type="text">-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div id="databutton" class="button" style="margin-right: 10px">开关数据搜集分析</div>
+        <input id="dataname" style="width: 150px;height: 20px" placeholder="请输入产品名称">
+        <div id="datatable" style="opacity: 0">
+            <!--<div class="tableitem">关机每天重复</div>-->
+            <!--<div class="tableitem">开机每天重复</div>-->
+            <!--<div class="tableitem">定时开机</div>-->
+            <!--<div class="tableitem">定时关机</div>-->
+            <!--<div class="tableitem">设备开启</div>-->
+            <!--<div class="tableitem">定时开机时间</div>-->
+            <!--<div class="tableitem">定时关机时间</div>-->
+            <div class="tableitem">名称</div>
+            <div class="tableitem">时间</div>
+            <div class="tableitem">温度</div>
+            <div class="tableitem">湿度</div>
+            <div class="tableitem">电流</div>
+            <div class="tableitem">电压</div>
+            <div class="tableitem">电功率</div>
+            <div class="tableitem">功耗</div>
+        </div>
+    </div>
+
+    <div id="divShowData">
+        <div id="log"></div>
+        <div id="clear" class="button" >clear</div>
+        <div id="divItemAll">
+            <div class="dataShow">关机每天重复</div>
+            <div class="dataShow">开机每天重复</div>
+            <div class="dataShow">定时开机</div>
+            <div class="dataShow">定时关机</div>
+            <div class="dataShow">设备开启</div>
+            <div class="dataShow">定时开机时间</div>
+            <div class="dataShow">定时关机时间</div>
+            <div class="dataShow">温度</div>
+            <div class="dataShow">湿度</div>
+            <div class="dataShow">电流</div>
+            <div class="dataShow">电压</div>
+            <div class="dataShow">电功率</div>
+            <div class="dataShow">功耗</div>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
