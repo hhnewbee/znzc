@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fadingEdge="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+     	<RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+			<EditText 
+			    android:layout_height="30dp"
+			    android:layout_width="80dp"
+			    android:background="@drawable/editextshape"
+			    android:textSize="12dp"
+			    android:layout_marginRight="5dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_alignParentLeft="true"
+			    android:layout_gravity="left"
+			    android:id="@+id/editName"
+			    android:gravity="center"
+			    android:hint="产品的名字" />
+			<Button
+			    android:layout_height="30dp"
+			    android:layout_width="60dp"
+			    android:background="@drawable/editextshape"
+			    android:textSize="16dp"
+			    android:layout_marginRight="5dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_gravity="right"
+			    android:id="@+id/editNameSure"
+			    android:layout_toRightOf="@id/editName"
+			    android:text="确定">
+			</Button>
+
+			<Button
+			    android:id="@+id/toElectricView"
+			    android:layout_width="80dp"
+			    android:layout_height="30dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginRight="5dp"
+			    android:background="@drawable/editextshape"
+			    android:text="查看记录"
+			    android:layout_alignParentRight="true"
+			    android:textSize="16dp" />
+	   </RelativeLayout>
+	   <!--定时开机  -->
+	   <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:id="@+id/setOT01"
+					android:text="定时开机" />
+				<Button
+				    android:layout_width="55dp"
+				    android:layout_height="25dp"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginRight="5dp"
+				     android:layout_marginLeft="5dp"
+				    android:background="@drawable/editextshape"
+				    android:text="设置时间"
+				    android:id="@+id/setOpenTime"
+				    android:layout_toRightOf="@id/setOT01"
+				    android:textSize="12dp" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@id/setOpenTime"
+					android:textSize="14dp"
+					android:id="@+id/showOpenTime"
+					android:textColor="#EE0000"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="10dp"
+					android:text="" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:textSize="14dp"
+					android:id="@+id/showOpenTimeSwitch"
+					android:layout_below="@id/showOpenTime"
+			        android:layout_alignLeft="@id/showOpenTime"
+					android:text="" />
+				<Switch
+					android:id="@+id/timeOpen"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启"  />
+				   <Spinner   
+				        android:id="@+id/spinnerDateOn"  
+				        android:layout_width="55dp"  
+				        android:layout_height="wrap_content"  
+				        android:layout_below="@id/setOpenTime"
+				        android:layout_alignLeft="@id/setOpenTime"
+				        android:textSize="12dp"
+				        android:entries="@array/spingarr"
+				        />  
+		</RelativeLayout>
+		<!--定时关机  -->
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:id="@+id/setOT01"
+					android:text="定时关机 " />
+				<Button
+				    android:layout_width="55dp"
+				    android:layout_height="25dp"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginRight="5dp"
+				     android:layout_marginLeft="5dp"
+				    android:background="@drawable/editextshape"
+				    android:text="设置时间"
+				    android:id="@+id/setCloseTime"
+				    android:layout_toRightOf="@id/setOT01"
+				    android:textSize="12dp" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@id/setCloseTime"
+					android:textSize="14dp"
+					android:textColor="#EE0000"
+					android:id="@+id/showCloseTime"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="10dp"
+					android:text="" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:textSize="14dp"
+					android:id="@+id/showCloseTimeSwitch"
+					android:layout_below="@id/showCloseTime"
+			        android:layout_alignLeft="@id/showCloseTime"
+					android:text="" />
+				<Switch
+					android:id="@+id/timeClose"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启"  />
+			   <Spinner   
+		        android:id="@+id/spinnerDateOff"  
+		        android:layout_width="55dp"  
+		        android:layout_height="wrap_content"  
+		        android:layout_below="@id/setCloseTime"
+		        android:layout_alignLeft="@id/setCloseTime"
+		        android:textSize="12dp"
+		        android:entries="@array/spingarr"
+		        />  
+					
+		</RelativeLayout>
+	   <!--开启后台  -->
+	   <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="后台实时监测" />
+
+				<Switch
+					android:id="@+id/backlistenerOnOff"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>
+		<!-- 开启/关闭继电器(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="开启/关闭继电器" />
+
+				<Switch
+					android:id="@+id/sw_bool_LED_OnOff"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- 环境温度(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="环境温度" />
+
+				<TextView
+					android:id="@+id/tv_data_Temperature"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+		
+		<!-- 环境湿度(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="环境湿度" />
+
+				<TextView
+					android:id="@+id/tv_data_Humidity"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+		<!--功耗  -->
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+				    android:id="@+id/text00"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="功耗" />
+				
+				<TextView
+				    android:id="@+id/productName"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:layout_toRightOf="@id/text00"
+					android:layout_marginLeft="10dp"
+					android:textColor="#008B8B"
+					android:textSize="16dp"
+					android:text="产品名" />
+				
+				<TextView
+				    android:id="@+id/electricLog"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:layout_toRightOf="@id/productName"
+					android:layout_marginLeft="10dp"
+					android:textColor="#00EE00"
+					android:visibility="invisible"
+					android:text="+--------->" />
+				<TextView
+					android:id="@+id/power_data_I"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+		<!-- 电流(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+				<TextView
+				    android:id="@+id/text01"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="电流" />
+				<TextView
+					android:id="@+id/tv_data_I"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+		
+		<!-- 电压(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="电压" />
+
+				<TextView
+					android:id="@+id/tv_data_V"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+		
+		<!-- 功率(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="功率" />
+
+				<TextView
+					android:id="@+id/tv_data_P"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+    </LinearLayout>
+</ScrollView>
